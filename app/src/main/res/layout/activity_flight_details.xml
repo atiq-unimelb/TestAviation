@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.FlightDetailsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#FF0000"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Trips"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/parent_Layout"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/my_toolbar">
+
+        <LinearLayout
+            android:id="@+id/flightDetailsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="#0048B7"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="115dp"
+                android:layout_height="180dp"
+                android:layout_margin="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/departure_Airport"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:text="PDX"
+                    android:textSize="24sp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/departure_City"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:text="Portland"
+                    android:textSize="18sp"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/departure_Time"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="06:05:00.000"
+                    android:textSize="18sp"
+                    android:textColor="#FFFFFF" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="130dp"
+                android:layout_height="180dp"
+                android:layout_margin="8dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/flight_Img"
+                    android:layout_width="130dp"
+                    android:layout_height="180dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/flight" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="115dp"
+                android:layout_height="180dp"
+                android:layout_margin="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/arrival_Airport"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:text="LAX"
+                    android:textSize="24sp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/arrival_City"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:text="Los Angeles"
+                    android:textSize="18sp"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/arrival_Time"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="08:44:00.000"
+                    android:textSize="18sp"
+                    android:textColor="#FFFFFF" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/middle_Part"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/middle_part"></ImageView>
+            <ImageView
+                android:id="@+id/last_Part"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/last_part"></ImageView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

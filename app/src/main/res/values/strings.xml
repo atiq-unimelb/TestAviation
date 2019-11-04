@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TestAviation</string>
+    <string name="btn_flightDetails">Flight Details</string>
+    <string name="btn_flightList">Check Flights</string>
+</resources>

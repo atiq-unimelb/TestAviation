@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="300dp">
+
+
+    <LinearLayout
+        android:id="@+id/top_Bar"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/to_Destination"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="Flights to Melbourne"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/parent_Layout"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/top_Bar">
+
+            <LinearLayout
+                android:layout_width="115dp"
+                android:layout_height="180dp"
+                android:layout_margin="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/departure_Airport"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:text="PDX"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/departure_Time"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="06:05:00.000"
+                    android:textSize="18sp"
+                    android:textColor="#0048B7"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/departure_City"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:text="Portland"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="130dp"
+                android:layout_height="180dp"
+                android:layout_margin="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/total_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text=""
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/non_stop"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/non_stop" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="115dp"
+                android:layout_height="180dp"
+                android:layout_margin="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/arrival_Airport"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:text="LAX"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/arrival_Time"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="08:44:00.000"
+                    android:textSize="18sp"
+                    android:textColor="#0048B7"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/arrival_City"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:text="Los Angeles"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
